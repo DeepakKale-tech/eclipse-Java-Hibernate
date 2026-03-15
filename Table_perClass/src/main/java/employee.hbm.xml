@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+    <class name="test.Employee" table="Empl1">
+    <id name="id" column="id">
+    	<generator class="increment"></generator>
+    </id>
+    
+
+    <property name="name" column="name"></property>
+    
+    <union-subclass name="test.Regular_emp" table="Regl1" >
+    <property name="salary" column="salary"></property>
+    <property name="bonus" column="bonus"></property>
+    </union-subclass>
+    
+    <union-subclass name="test.Contract_emp" table="Cont1">
+    <property name="pay_per_hour" column="pay_per_hour"></property>
+    <property name="contract_period" column="contract_period"></property>
+    </union-subclass>
+    
+    </class>
+</hibernate-mapping>

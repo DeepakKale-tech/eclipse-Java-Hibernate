@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+    <class name="test.Marks" table="Markstable">
+    <id name="id" column="pid">
+    	<generator class="foreign">
+    		<param name="property">person</param>
+    	</generator>
+    </id>
+    
+
+    <property name="math" column="math"/>
+    <property name="sci" column="sci"/>
+    <property name="eng" column="eng"/>
+    
+    <one-to-one name="person" class="test.Person" constrained="true"/>
+    
+    
+    
+    </class>
+</hibernate-mapping>

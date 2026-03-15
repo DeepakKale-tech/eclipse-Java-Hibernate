@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+    <class name="test.Answer" table="Answertable">
+    <id name="id" type="int"> 
+    <column name="ansid"/>
+    	<generator class="increment"></generator>
+    </id>
+    
+    <property name="ansname" column="Ans_name"/>
+    <property name="postby" column="Posted_By"/>
+    
+    </class>
+</hibernate-mapping>

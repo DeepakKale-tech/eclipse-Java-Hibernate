@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+    <class name="test.Address" table="Addresstable">
+    <id name="addressid" column="addressid">
+    	<generator class="increment"></generator>
+    </id>
+    
+
+    <property name="addressline1"></property>
+    <property name="city"></property>
+    <property name="state"></property>
+    <property name="pincode"></property>
+    <property name="country"></property>
+    
+    </class>
+</hibernate-mapping>
