@@ -6,15 +6,9 @@
     		<param name="property">person</param>
     	</generator>
     </id>
-    
-
     <property name="math" column="math"/>
     <property name="sci" column="sci"/>
     <property name="eng" column="eng"/>
-    
     <one-to-one name="person" class="test.Person" constrained="true"/>
-    
-    
-    
     </class>
 </hibernate-mapping>

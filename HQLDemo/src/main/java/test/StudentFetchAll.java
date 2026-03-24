@@ -13,18 +13,14 @@ public class StudentFetchAll {
 	{
 		//step 1 configure
 		Configuration config = new Configuration();
-		config.configure("hibernate.cfg.xml");
-		
+		config.configure("hibernate.cfg.xml");	
 		//step 2 build session factory
 		SessionFactory factory = config.buildSessionFactory();
-		
 		//step 3 open session
 		Session session = factory.openSession();
-		
 		//step 4 query
 		Query q = session.createQuery("From Student",Student.class);
 		List<Student> list = q.list();
-		
 		for(Student s:list)
 		{
 			System.out.println("Id: "+s.getId());

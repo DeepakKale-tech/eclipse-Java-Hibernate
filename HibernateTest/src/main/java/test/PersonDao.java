@@ -20,7 +20,7 @@ public class PersonDao {
 		
 		Transaction trans = session.beginTransaction();
 		
-		Person p = new Person("Vishal",30,900000,"Mumbai");
+		Person p = new Person("Nayan",29,60000,"Pune");
 		
 		session.save(p);
 		

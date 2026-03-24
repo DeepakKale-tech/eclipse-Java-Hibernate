@@ -6,9 +6,7 @@ public class Person {
 	private String name,city;
 	
 	public Person() 
-	{	
-		
-	}
+	{		}
 
 	public Person(String name, int age, int salary, String city) {
 		super();
